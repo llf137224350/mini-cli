@@ -70,7 +70,7 @@ cli component hello_world -d ./
 > 2. expression 图片上传到服务器返回 json 获取图片网络地址解析表达式，如：data[0].fileUrl
 > 3. author 模板注释中的作者
 > 4. tinify_api_key，如果配置了当前值，则自动激活图片压缩功能，不配置时不会激活压缩功能，压缩技术由[tinypng](https://tinypng.com/)提供
-> 5.compression_times 压缩次数，默认为1
+> 5. compression_times 压缩次数，默认为1
 
 ```bash
 # 设置文件服务器接口地址
