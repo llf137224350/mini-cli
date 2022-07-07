@@ -1,9 +1,0 @@
-{
-  "backgroundColorTop": "#ffffff",
-  "backgroundColorBottom": "#ffffff",
-  "navigationBarTitleText": "HelloWorld",
-  "backgroundTextStyle": "dark",
-  "navigationBarBackgroundColor": "#ffffff",
-  "navigationBarTextStyle": "black",
-  "usingComponents": {}
-}

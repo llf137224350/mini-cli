@@ -40,9 +40,11 @@
     "fs-extra": "^10.1.0",
     "inquirer": "^8.2.4",
     "npmlog": "^6.0.2",
+    "open": "^8.4.0",
     "parser-property": "^2.0.0",
     "path-exists": "^4.0.0",
     "request": "^2.88.2",
+    "tinify": "^1.6.1",
     "userhome": "^1.0.0"
   },
   "publishConfig": {
