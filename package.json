@@ -1,5 +1,5 @@
 {
-  "name": "mini-cli",
+  "name": "mini-core-cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,25 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llf137224350/mini-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/llf137224350/mini-cli/issues"
+  },
+  "homepage": "https://github.com/llf137224350/mini-cli#readme",
+  "keywords": [
+    "miniprogram",
+    "wechat",
+    "mini-core",
+    "page",
+    "component",
+    "upload",
+    "rm",
+    "rn"
+  ],
+  "author": "い 狂奔的蜗牛",
   "license": "ISC",
   "dependencies": {
     "cli-cursor": "^3.0.0",
@@ -26,5 +44,8 @@
     "path-exists": "^4.0.0",
     "request": "^2.88.2",
     "userhome": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
