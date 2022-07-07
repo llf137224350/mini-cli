@@ -80,3 +80,9 @@ cli config get host
 # 删除配置信息
 cli config delete host
 ```
+
+# cli json
+> 打开json格式化工具
+```bash
+cli json
+```
