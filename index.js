@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const program = require('commander');
-const helpOptions = require('./lib/core/help');
-const createCommands = require('./lib/core/create');
+const helpOptions = require('./lib/core/Help');
+const createCommands = require('./lib/core/Create');
 
 //  从package.json中读取版本信息
 program.version(require('./package.json').version);
