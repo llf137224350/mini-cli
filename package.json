@@ -14,11 +14,16 @@
   "dependencies": {
     "cli-cursor": "^3.0.0",
     "cli-spinner": "^0.2.10",
+    "clipboardy": "^2.3.0",
     "commander": "^9.3.0",
+    "dotenv": "^16.0.1",
     "download-git-repo": "^3.0.2",
     "fs-extra": "^10.1.0",
     "inquirer": "^8.2.4",
     "npmlog": "^6.0.2",
-    "path-exists": "^4.0.0"
+    "parser-property": "^2.0.0",
+    "path-exists": "^4.0.0",
+    "request": "^2.88.2",
+    "userhome": "^1.0.0"
   }
 }

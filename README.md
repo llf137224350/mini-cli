@@ -24,3 +24,9 @@ mini -rm -d ./test  -e .js -f
 # -p 待替换字符串 值 1.test.js  => 1.js
 mini -rm -d ./test  -p '.test' ''
 ```
+
+# mini upload
+> 上传图片到文件服务器
+```bash
+mini upload '/Users/snail/Desktop/learning/图片素材/740c79ce-af29-41b8-b78d-5f49c96e38c4.jpg' '/Users/snail/Desktop/learning/图片素材/00874a5e-0df2-446b-8f69-a30eb7d88ee8.png'
+```
