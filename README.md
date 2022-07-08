@@ -81,6 +81,8 @@ cli config set host http://www.uicoder.cn
 cli config get host
 # 删除配置信息
 cli config delete host
+# 查看所有配置信息
+cli config list
 ```
 
 # cli hellojson
