@@ -83,8 +83,14 @@ cli config get host
 cli config delete host
 ```
 
-# cli json
-> 打开json格式化工具
+# cli hellojson
+> 打开json格式化工具 - HelloJSON
 ```bash
-cli json
+cli hellojson
+```
+
+# cli minicore
+> 打开微信小程序框架mini-core帮助文档
+```bash
+cli minicore
 ```
