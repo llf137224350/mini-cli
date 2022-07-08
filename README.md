@@ -16,7 +16,7 @@ cli create hello-world -d ./test
 # -d 可以传入绝对路径或者相对于终端所在当前目录的相对路径，只能传入一个路径
 # -e 指定删除文件扩展名，如.js .wxss
 # -f 静默强制删除，不会进行是否删除确认
-cli -rm -d ./test  -e .js -f
+cli rm -d ./test  -e .js -f
 ```
 
 # cli rn
@@ -27,7 +27,7 @@ cli -rm -d ./test  -e .js -f
 # -d 可以传入绝对路径或者相对于终端所在当前目录的相对路径，只能传入一个路径
 # -f 静默重命名，不会进行是否重命名确认
 # -p 待替换字符串 值 1.test.js  => 1.js
-cli -rm -d ./test  -p '.test' ''
+cli rn -d ./test  -p '.test' ''
 ```
 
 # cli upload
