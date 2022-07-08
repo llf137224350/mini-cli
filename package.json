@@ -1,6 +1,6 @@
 {
   "name": "mini-core-cli",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -39,12 +39,14 @@
     "download-git-repo": "^3.0.2",
     "ejs": "^3.1.8",
     "fs-extra": "^10.1.0",
+    "import-local": "^3.1.0",
     "inquirer": "^8.2.4",
     "npmlog": "^6.0.2",
     "open": "^8.4.0",
     "parser-property": "^2.0.0",
     "path-exists": "^4.0.0",
     "request": "^2.88.2",
+    "root-check": "^1.0.0",
     "tinify": "^1.6.1",
     "userhome": "^1.0.0"
   },
