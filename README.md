@@ -6,6 +6,27 @@
 # -d 可以传入绝对路径或者相对于终端所在当前目录的相对路径，只能传入一个路径
 cli create hello-world -d ./test
 ```
+# cli page
+
+> 根据选择模板创建微信小程序页面骨架，支持 mini-core 模板和原生小程序模板
+
+```bash
+# -d 可以传入绝对路径或者相对于终端所在当前目录的相对路径，只能传入一个路径
+cli page hello_world -d ./
+```
+
+# cli component
+
+> 根据选择模板创建组件骨架，支持以下模板：
+> 1. mini-core 模板(微信小程序)
+> 2. 原生小程序页模板(微信小程序)
+> 3. vue.js 2.x模板
+> 4. vue.js 3.x模板
+
+```bash
+# -d 可以传入绝对路径或者相对于终端所在当前目录的相对路径，只能传入一个路径
+cli component hello_world -d ./
+```
 
 # cli rm
 
@@ -42,26 +63,16 @@ cli rn -d ./test  -p '.test' ''
 cli upload '/Users/snail/Desktop/learning/图片素材/740c79ce-af29-41b8-b78d-5f49c96e38c4.jpg' '/Users/snail/Desktop/learning/图片素材/00874a5e-0df2-446b-8f69-a30eb7d88ee8.png'
 ```
 
-# cli page
-
-> 根据选择模板创建微信小程序页面骨架，支持 mini-core 模板和原生小程序模板
-
+# cli compress
+> 对本地图片进行压缩，支持单张图片与多张图片
 ```bash
-# -d 可以传入绝对路径或者相对于终端所在当前目录的相对路径，只能传入一个路径
-cli page hello_world -d ./
+# -d 指定压缩后的图片存放的目录，不指定时会压缩并覆盖当前图片
+cli compress '/Users/snail/Desktop/learning/图片素材/740c79ce-af29-41b8-b78d-5f49c96e38c4.jpg' '/Users/snail/Desktop/learning/图片素材/00874a5e-0df2-446b-8f69-a30eb7d88ee8.png'
 ```
-
-# cli component
-
-> 根据选择模板创建组件骨架，支持以下模板：
-> 1. mini-core 模板(微信小程序)
-> 2. 原生小程序页模板(微信小程序)
-> 3. vue.js 2.x模板
-> 4. vue.js 3.x模板
-
+# cli base64
+> 对本地图片进行base64编码，编码成功后可选择将结果复制到粘贴板或者控制台打印，base64操作只支持单张图片
 ```bash
-# -d 可以传入绝对路径或者相对于终端所在当前目录的相对路径，只能传入一个路径
-cli component hello_world -d ./
+cli base64 '/Users/snail/Desktop/learning/图片素材/740c79ce-af29-41b8-b78d-5f49c96e38c4.jpg'
 ```
 
 # cli config
