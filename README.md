@@ -1,12 +1,10 @@
 # mini-core-cli 脚手架
 
 # cli create
-
 > 根据模板在指定目录下（./test）创建新项目
-
 ```bash
 # -d 可以传入绝对路径或者相对于终端所在当前目录的相对路径，只能传入一个路径
-cli create -d ./test
+cli create hello-world -d ./test
 ```
 
 # cli rm
