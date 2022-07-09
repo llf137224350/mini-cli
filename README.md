@@ -1,6 +1,7 @@
 # mini-core-cli 脚手架
 
 ## cli create \<project>
+
 > 根据模板在指定目录下（./test）创建新项目
 
 ```bash
@@ -17,6 +18,28 @@ cli create hello-world -d ./test
 cli page hello_world 测试页面生成  -d ./
 ```
 
+### 自定义页面模板
+
+> 可以通过```cli config set custom_page_template_dir 模板所在文件夹```
+>
+指定页面模板所在目录，建议配置为绝对路径。文件名命名格式建议参照index.js.ejs，其中index任意，js为最终生成的文件名类型，ejs可选，为了在编辑模板时可以使用ejs支持的表达式，建议使用ejs格式文件，在创建模板时会传入如下数据，可按需对应取值。
+
+```ejs
+<!--输入 cli page hello_world 测试 -d ./test-->
+<!--结果：hello-world-->
+<%= data.className %>
+<!--结果：cli config set author 值，如：い 狂奔的蜗牛-->
+<%= data.author %>
+<!--结果：HelloWorld-->
+<%= data.controllerName %>
+<!--结果：hello_world-->
+<%= data.fileName %>
+<!--结果：当前日期，如：2022-07-09 22:48:15-->
+<%= data.createDate %>
+<!--结果：测试-->
+<%= data.description %>
+```
+
 ## cli component \<componentName>  [description]
 
 > 根据选择模板创建组件骨架，支持以下模板：
@@ -30,6 +53,11 @@ cli page hello_world 测试页面生成  -d ./
 cli component hello_world 测试组件生成 -d ./
 ```
 
+### 自定义组件模板
+
+> 可以通过```cli config set custom_component_template_dir 模板所在文件夹```指定组件模板所在目录，其他同创建页面自定义模板
+
+```
 ## cli rm
 
 > 批量删除指定目录（./test）下的空文件夹或者指定的扩展名文件
