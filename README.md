@@ -37,10 +37,10 @@ cli component hello_world -d ./
 
 ```bash
 # 删除./test目录下的空文件夹和.*js文件
-# -d 可以传入绝对路径或者相对于终端所在当前目录的相对路径，只能传入一个路径
+# -D 可以传入绝对路径或者相对于终端所在当前目录的相对路径，可以传入多个路径
 # -e 指定删除文件扩展名，如.js .wxss
 # -f 静默强制删除，不会进行是否删除确认
-cli rm -d ./test  -e .js -f
+cli rm -D ./test  -e .js -f
 ```
 
 # cli rn
