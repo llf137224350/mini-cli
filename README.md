@@ -1,7 +1,6 @@
 # mini-core-cli 脚手架
 
-# cli create
-
+## cli create \<project>
 > 根据模板在指定目录下（./test）创建新项目
 
 ```bash
@@ -9,16 +8,16 @@
 cli create hello-world -d ./test
 ```
 
-# cli page
+## cli page \<pageName> [description]
 
 > 根据选择模板创建微信小程序页面骨架，支持 mini-core 模板和原生小程序模板
 
 ```bash
 # -d 可以传入绝对路径或者相对于终端所在当前目录的相对路径，只能传入一个路径
-cli page hello_world -d ./
+cli page hello_world 测试页面生成  -d ./
 ```
 
-# cli component
+## cli component \<componentName>  [description]
 
 > 根据选择模板创建组件骨架，支持以下模板：
 > 1. mini-core 模板(微信小程序)
@@ -28,10 +27,10 @@ cli page hello_world -d ./
 
 ```bash
 # -d 可以传入绝对路径或者相对于终端所在当前目录的相对路径，只能传入一个路径
-cli component hello_world -d ./
+cli component hello_world 测试组件生成 -d ./
 ```
 
-# cli rm
+## cli rm
 
 > 批量删除指定目录（./test）下的空文件夹或者指定的扩展名文件
 
@@ -43,7 +42,7 @@ cli component hello_world -d ./
 cli rm -D ./test  -e .js -f
 ```
 
-# cli rn
+## cli rn
 
 > 批量重命名指定目录（./test）下的文件
 
@@ -54,7 +53,7 @@ cli rm -D ./test  -e .js -f
 cli rn -d ./test  -p '.test' ''
 ```
 
-# cli upload
+## cli upload [localPicturePaths...]
 
 > 上传图片到文件服务器，支持单张图片与多张图片，如果为单张图片，则自动复制到图片网络地址到粘贴板，
 > 图片为多张时，则列出所有图片通过键盘方向键进行选择进行复制图片网络地址。
@@ -66,7 +65,7 @@ cli rn -d ./test  -p '.test' ''
 cli upload '/Users/snail/Desktop/learning/图片素材/740c79ce-af29-41b8-b78d-5f49c96e38c4.jpg' '/Users/snail/Desktop/learning/图片素材/00874a5e-0df2-446b-8f69-a30eb7d88ee8.png'
 ```
 
-# cli compress
+## cli compress  [localPicturePaths...]
 
 > 对本地图片进行压缩，支持单张图片与多张图片
 
@@ -75,7 +74,7 @@ cli upload '/Users/snail/Desktop/learning/图片素材/740c79ce-af29-41b8-b78d-5
 cli compress '/Users/snail/Desktop/learning/图片素材/740c79ce-af29-41b8-b78d-5f49c96e38c4.jpg' '/Users/snail/Desktop/learning/图片素材/00874a5e-0df2-446b-8f69-a30eb7d88ee8.png'
 ```
 
-# cli base64
+## cli base64 \<localPicturePath>
 
 > 对本地图片进行base64编码，编码成功后可选择将结果复制到粘贴板或者控制台打印，base64操作只支持单张图片
 
@@ -83,7 +82,7 @@ cli compress '/Users/snail/Desktop/learning/图片素材/740c79ce-af29-41b8-b78d
 cli base64 '/Users/snail/Desktop/learning/图片素材/740c79ce-af29-41b8-b78d-5f49c96e38c4.jpg'
 ```
 
-# cli server
+## cli server
 
 > 开启一个静态资源服务器，支持文件更改时自动刷新，想了解更多请查看[live-server](https://www.npmjs.com/package/live-server)包
 
@@ -96,7 +95,7 @@ cli base64 '/Users/snail/Desktop/learning/图片素材/740c79ce-af29-41b8-b78d-5
 cli server -d ./test
 ```
 
-# cli lessc
+## cli lessc
 
 > 编译less为css、wxss
 
@@ -108,7 +107,7 @@ cli lessc
 cli lessc -d ./ -w -e wxss
 ```
 
-# cli exec
+## cli exec  [commands...]
 
 > 同步执行多条命令，如果命令执行后有后续操作，如选择或者输入，则不适合通过当前方式执行
 
@@ -118,7 +117,7 @@ cli lessc -d ./ -w -e wxss
 cli exec 'npm install' 'npm run server' -d ./ -f  
 ```
 
-# cli config
+## cli config \<option> [configKeyAndValue...]
 
 > 设置配置项
 >
@@ -139,7 +138,7 @@ cli config delete host
 cli config list
 ```
 
-# cli hellojson
+## cli hellojson
 
 > 打开json格式化工具 - HelloJSON
 
@@ -147,7 +146,7 @@ cli config list
 cli hellojson
 ```
 
-# cli minicore
+## cli minicore
 
 > 打开微信小程序框架mini-core帮助文档
 
