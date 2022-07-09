@@ -1,11 +1,14 @@
 # mini-core-cli 脚手架
 
 # cli create
+
 > 根据模板在指定目录下（./test）创建新项目
+
 ```bash
 # -d 可以传入绝对路径或者相对于终端所在当前目录的相对路径，只能传入一个路径
 cli create hello-world -d ./test
 ```
+
 # cli page
 
 > 根据选择模板创建微信小程序页面骨架，支持 mini-core 模板和原生小程序模板
@@ -64,15 +67,33 @@ cli upload '/Users/snail/Desktop/learning/图片素材/740c79ce-af29-41b8-b78d-5
 ```
 
 # cli compress
+
 > 对本地图片进行压缩，支持单张图片与多张图片
+
 ```bash
 # -d 指定压缩后的图片存放的目录，不指定时会压缩并覆盖当前图片
 cli compress '/Users/snail/Desktop/learning/图片素材/740c79ce-af29-41b8-b78d-5f49c96e38c4.jpg' '/Users/snail/Desktop/learning/图片素材/00874a5e-0df2-446b-8f69-a30eb7d88ee8.png'
 ```
+
 # cli base64
+
 > 对本地图片进行base64编码，编码成功后可选择将结果复制到粘贴板或者控制台打印，base64操作只支持单张图片
+
 ```bash
 cli base64 '/Users/snail/Desktop/learning/图片素材/740c79ce-af29-41b8-b78d-5f49c96e38c4.jpg'
+```
+
+# cli server
+
+> 开启一个静态资源服务器，支持文件更改时自动刷新，想了解更多请查看[live-server](https://www.npmjs.com/package/live-server)包
+
+```bash
+# -H 绑定域名localhost或者127.0.0.1或者本机ip，默认为：127.0.0.1
+# -P 绑定端口号，默认为：8080
+# -F 指定浏览器默认访问的文件路径，默认为：index.html
+# -O 启动完成后是否打开默认浏览器，默认为：false
+# -d 静态资源根目录，默认为：./
+cli server -d ./test
 ```
 
 # cli config
@@ -97,13 +118,17 @@ cli config list
 ```
 
 # cli hellojson
+
 > 打开json格式化工具 - HelloJSON
+
 ```bash
 cli hellojson
 ```
 
 # cli minicore
+
 > 打开微信小程序框架mini-core帮助文档
+
 ```bash
 cli minicore
 ```
