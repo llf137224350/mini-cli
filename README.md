@@ -108,6 +108,16 @@ cli lessc
 cli lessc -d ./ -w -e wxss
 ```
 
+# cli exec
+
+> 同步执行多条命令，如果命令执行后有后续操作，如选择或者输入，则不适合通过当前方式执行
+
+```bash
+# -d 执行命令时所在目录，默认为：./
+# -f 静默，不会提示确认
+cli exec 'npm install' 'npm run server' -d ./ -f  
+```
+
 # cli config
 
 > 设置配置项
