@@ -41,6 +41,7 @@
     "fs-extra": "^10.1.0",
     "import-local": "^3.1.0",
     "inquirer": "^8.2.4",
+    "live-server": "^1.2.2",
     "npmlog": "^6.0.2",
     "open": "^8.4.0",
     "parser-property": "^2.0.0",
