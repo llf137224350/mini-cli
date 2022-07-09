@@ -57,7 +57,6 @@ cli component hello_world 测试组件生成 -d ./
 
 > 可以通过```cli config set custom_component_template_dir 模板所在文件夹```指定组件模板所在目录，其他同创建页面自定义模板
 
-```
 ## cli rm
 
 > 批量删除指定目录（./test）下的空文件夹或者指定的扩展名文件
