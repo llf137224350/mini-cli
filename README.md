@@ -96,6 +96,18 @@ cli base64 '/Users/snail/Desktop/learning/图片素材/740c79ce-af29-41b8-b78d-5
 cli server -d ./test
 ```
 
+# cli lessc
+
+> 编译less为css、wxss
+
+```bash
+# -e 指定less编译生成的目标文件后缀，可以传入多个，如：css wxss，不传入时默认css
+# -w 是否监听-d指定目录下的所有less变化，默认为false。会编译目录下的所有less文件，如果设置为true，只会监听文件 ，如果文件没有做修改，不会进行编译
+# -d 静态资源根目录，默认为：./
+cli lessc
+cli lessc -d ./ -w -e wxss
+```
+
 # cli config
 
 > 设置配置项
